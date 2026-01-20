@@ -1,10 +1,12 @@
+import camiseta1 from "../assets/tshirts/camiseta1.png";
+
 export const PRODUCTS = [
   {
     id: 1,
     name: "Alvorada Retro 90",
     price: 349.90,
     category: "Retro",
-    image: "https://placehold.co/600x600/f59e0b/ffffff?text=Alvorada+90",
+    image: camiseta1,
     tag: "Clássico",
     description: "Inspirada nos pores do sol do Arpoador. Tecido respirável com gola polo clássica."
   },
@@ -13,7 +15,7 @@ export const PRODUCTS = [
     name: "Lapa Night Street",
     price: 289.90,
     category: "Streetwear",
-    image: "https://placehold.co/600x600/1e3a8a/ffffff?text=Lapa+Blue",
+    image: camiseta1,
     tag: "Novo",
     description: "Design sofisticado para a noite carioca. Azul profundo com acabamento premium."
   },
@@ -22,7 +24,7 @@ export const PRODUCTS = [
     name: "Maraca 50 Concept",
     price: 319.90,
     category: "Concept",
-    image: "https://placehold.co/600x600/b91c1c/ffffff?text=Maraca+50",
+    image: camiseta1,
     tag: "Exclusivo",
     description: "Homenagem ao templo do futebol. Vermelho intenso com detalhes em dourado real."
   },
@@ -31,7 +33,7 @@ export const PRODUCTS = [
     name: "Copacabana Wave",
     price: 299.90,
     category: "Lifestyle",
-    image: "https://placehold.co/600x600/ffffff/000000?text=Copa+Wave",
+    image: camiseta1,
     tag: "Trending",
     description: "Padrão icônico do calçadão aplicado em malha tecnológica off-white."
   },
@@ -40,7 +42,7 @@ export const PRODUCTS = [
     name: "Seleção Canarinho 82",
     price: 399.90,
     category: "Retro",
-    image: "https://placehold.co/600x600/facc15/166534?text=Brasil+82",
+    image: camiseta1,
     tag: "Lenda",
     description: "A camisa do futebol arte. O manto sagrado que encantou o mundo."
   },
@@ -49,7 +51,7 @@ export const PRODUCTS = [
     name: "Tijuca Forest",
     price: 279.90,
     category: "Concept",
-    image: "https://placehold.co/600x600/064e3b/fbbf24?text=Tijuca+Forest",
+    image: camiseta1,
     tag: "Eco",
     description: "Verde floresta profundo. Elegância sustentável com plásticos reciclados."
   }

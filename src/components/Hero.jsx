@@ -1,6 +1,8 @@
 import React from 'react';
-import { Waves, ArrowRight, Trophy, Sun } from 'lucide-react';
+import { Waves, ArrowRight, Trophy } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import HeroProduct from './HeroProduct';
+import camiseta1 from '../assets/tshirts/camiseta1.png';
 
 const Hero = () => (
   <div className="relative pt-32 pb-12 md:pt-48 md:pb-32 overflow-hidden bg-transparent">
@@ -39,29 +41,7 @@ const Hero = () => (
       </div>
       
       {/* Hero Visual - Cleaner, Magazine Style */}
-      <div className="w-full md:w-1/2 relative z-10">
-        <div className="relative aspect-[4/5] md:aspect-square rounded-[2rem] overflow-hidden shadow-2xl shadow-stone-300 border border-white">
-           <img 
-            src="https://placehold.co/800x800/e5e5e5/1e3a8a?text=PREMIUM+KIT" 
-            alt="Hero Shirt" 
-            className="w-full h-full object-cover"
-           />
-           
-           <div className="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-green-900/80 to-transparent">
-             <div className="flex items-center gap-2 mb-2">
-                <Sun className="w-5 h-5 text-yellow-400" />
-                <span className="text-white/90 font-bold tracking-widest text-xs uppercase">Edição Limitada</span>
-             </div>
-             <h2 className="text-3xl font-black text-white italic tracking-tighter">GOLDEN ERA</h2>
-           </div>
-        </div>
-        
-        {/* Floating Badge */}
-        <div className="absolute top-8 -right-4 w-24 h-24 bg-white rounded-full flex flex-col items-center justify-center z-30 shadow-xl border-4 border-stone-100">
-           <span className="text-stone-400 text-[10px] font-bold uppercase">Est.</span>
-           <span className="text-2xl font-black text-green-800">1950</span>
-        </div>
-      </div>
+      <HeroProduct image={camiseta1} />
     </div>
   </div>
 );

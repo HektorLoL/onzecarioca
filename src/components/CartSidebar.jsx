@@ -1,8 +1,15 @@
 import React from 'react';
 import { ShoppingBag, X, Trash2, Minus, Plus, ArrowRight } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const CartSidebar = ({ isOpen, onClose, cart, onRemove, onUpdateQty }) => {
+  const navigate = useNavigate();
   const total = cart.reduce((acc, item) => acc + (item.price * item.quantity), 0);
+
+  const handleCheckout = () => {
+    onClose();
+    navigate('/checkout');
+  };
 
   return (
     <>
@@ -81,7 +88,10 @@ const CartSidebar = ({ isOpen, onClose, cart, onRemove, onUpdateQty }) => {
                   <span>R$ {total.toFixed(2).replace('.', ',')}</span>
                 </div>
               </div>
-              <button className="w-full py-4 bg-green-700 hover:bg-green-800 text-white font-bold uppercase tracking-wider rounded-xl transition-all shadow-lg hover:shadow-green-900/30 flex items-center justify-center gap-3">
+              <button 
+                onClick={handleCheckout}
+                className="w-full py-4 bg-green-700 hover:bg-green-800 text-white font-bold uppercase tracking-wider rounded-xl transition-all shadow-lg hover:shadow-green-900/30 flex items-center justify-center gap-3"
+              >
                 Finalizar Compra <ArrowRight className="w-5 h-5" />
               </button>
             </div>

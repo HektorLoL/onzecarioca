@@ -16,6 +16,7 @@ import Sobre from './pages/Sobre';
 import Contato from './pages/Contato';
 import Icons from './pages/Icons';
 import Colecao from './pages/Colecao';
+import Checkout from './pages/Checkout';
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
@@ -42,7 +43,14 @@ const analytics = getAnalytics(app);
 
 export default function App() {
   const [isCartOpen, setIsCartOpen] = useState(false);
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useState(() => {
+    const savedCart = localStorage.getItem('cart');
+    return savedCart ? JSON.parse(savedCart) : [];
+  });
+
+  React.useEffect(() => {
+    localStorage.setItem('cart', JSON.stringify(cart));
+  }, [cart]);
 
   const addToCart = (product) => {
     setCart(prev => {
@@ -71,6 +79,10 @@ export default function App() {
     }));
   };
 
+  const clearCart = () => {
+    setCart([]);
+  };
+
   const cartCount = cart.reduce((acc, item) => acc + item.quantity, 0);
 
   return (
@@ -90,7 +102,8 @@ export default function App() {
           <Route path="/sobre" element={<Sobre />} />
           <Route path="/contato" element={<Contato />} />
           <Route path="/icons" element={<Icons />} />
-          <Route path="/colecao" element={<Colecao />} />
+          <Route path="/colecao" element={<Colecao addToCart={addToCart} />} />
+          <Route path="/checkout" element={<Checkout cart={cart} clearCart={clearCart} />} />
         </Routes>
 
         <Footer />
