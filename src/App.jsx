@@ -17,6 +17,29 @@ import Contato from './pages/Contato';
 import Icons from './pages/Icons';
 import Colecao from './pages/Colecao';
 
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyCyljiec_6KRT0USuVcpfYA5O1fNuiuBtU",
+  authDomain: "onzecarioca-16dcf.firebaseapp.com",
+  projectId: "onzecarioca-16dcf",
+  storageBucket: "onzecarioca-16dcf.firebasestorage.app",
+  messagingSenderId: "768349448989",
+  appId: "1:768349448989:web:f09a5f6ad9de90c579cff4",
+  measurementId: "G-CVF331JL11"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+
 export default function App() {
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [cart, setCart] = useState([]);
