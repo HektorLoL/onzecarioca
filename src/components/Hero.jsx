@@ -2,7 +2,6 @@ import React from 'react';
 import { Waves, ArrowRight, Trophy } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import HeroProduct from './HeroProduct';
-import camiseta1 from '../assets/tshirts/camiseta1.png';
 
 const Hero = () => (
   <div className="relative pt-32 pb-12 md:pt-48 md:pb-32 overflow-hidden bg-transparent">
@@ -41,7 +40,7 @@ const Hero = () => (
       </div>
       
       {/* Hero Visual - Cleaner, Magazine Style */}
-      <HeroProduct image={camiseta1} />
+      <HeroProduct image="/tshirts/camiseta1.png" />
     </div>
   </div>
 );
