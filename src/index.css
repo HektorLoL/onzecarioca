@@ -11,10 +11,27 @@
 }
 
 .animate-marquee {
-  animation: marquee 40s linear infinite;
+  animation: marquee 120s linear infinite;
+}
+
+/* Ensure the animation is smooth on mobile and respects reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation: none;
+    overflow-x: auto;
+  }
 }
 
 .bg-football-pattern {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='40' opacity='0.05'%3E⚽%3C/text%3E%3C/svg%3E");
   animation: football-pass 10s linear infinite;
+}
+
+/* Custom scrollbar for better mobile/desktop aesthetics */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

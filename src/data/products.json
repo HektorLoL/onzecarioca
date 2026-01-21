@@ -6,7 +6,37 @@
     "category": "Retro",
     "image": "/tshirts/camiseta1.png",
     "tag": "Clássico",
-    "description": "Inspirada nos pores do sol do Arpoador. Tecido respirável com gola polo clássica."
+    "description": "Inspirada nos pores do sol do Arpoador. Tecido respirável com gola polo clássica.",
+    "reviews": [
+      {
+        "id": 101,
+        "user": "Carlos S.",
+        "rating": 5,
+        "date": "2 dias atrás",
+        "text": "Qualidade impecável! O tecido é muito confortável e o caimento ficou perfeito."
+      },
+      {
+        "id": 102,
+        "user": "Mariana C.",
+        "rating": 5,
+        "date": "1 semana atrás",
+        "text": "Simplesmente fantástica. Comprarei outras cores com certeza."
+      },
+      {
+        "id": 103,
+        "user": "Pedro H.",
+        "rating": 4,
+        "date": "3 semanas atrás",
+        "text": "Gostei muito do design. Só achei a forma um pouco grande, mas nada que atrapalhe."
+      },
+      {
+        "id": 104,
+        "user": "Luiza B.",
+        "rating": 5,
+        "date": "1 mês atrás",
+        "text": "O material é sensacional, muito fresco para o calor do Rio."
+      }
+    ]
   },
   {
     "id": 2,
@@ -15,7 +45,44 @@
     "category": "Streetwear",
     "image": "/tshirts/camiseta1.png",
     "tag": "Novo",
-    "description": "Design sofisticado para a noite carioca. Azul profundo com acabamento premium."
+    "description": "Design sofisticado para a noite carioca. Azul profundo com acabamento premium.",
+    "reviews": [
+      {
+        "id": 201,
+        "user": "Felipe R.",
+        "rating": 5,
+        "date": "3 dias atrás",
+        "text": "Acabamento de primeira. Vale cada centavo."
+      },
+      {
+        "id": 202,
+        "user": "Gabriela T.",
+        "rating": 5,
+        "date": "5 dias atrás",
+        "text": "Muito bonita e veste super bem. Recomendo!"
+      },
+      {
+        "id": 203,
+        "user": "Lucas O.",
+        "rating": 4,
+        "date": "2 semanas atrás",
+        "text": "Produto de excelente qualidade, chegou antes do prazo."
+      },
+      {
+        "id": 204,
+        "user": "Fernanda L.",
+        "rating": 5,
+        "date": "1 semana atrás",
+        "text": "Adorei a camisa, muito estilosa e confortável."
+      },
+      {
+        "id": 205,
+        "user": "Rafael K.",
+        "rating": 5,
+        "date": "1 mês atrás",
+        "text": "Melhor compra que fiz esse mês. A qualidade surpreendeu."
+      }
+    ]
   },
   {
     "id": 3,
@@ -24,7 +91,51 @@
     "category": "Concept",
     "image": "/tshirts/camiseta1.png",
     "tag": "Exclusivo",
-    "description": "Homenagem ao templo do futebol. Vermelho intenso com detalhes em dourado real."
+    "description": "Homenagem ao templo do futebol. Vermelho intenso com detalhes em dourado real.",
+    "reviews": [
+      {
+        "id": 301,
+        "user": "Juliana M.",
+        "rating": 5,
+        "date": "2 dias atrás",
+        "text": "A estampa é ainda mais bonita pessoalmente."
+      },
+      {
+        "id": 302,
+        "user": "Bruno S.",
+        "rating": 5,
+        "date": "1 semana atrás",
+        "text": "Serviço de atendimento excelente e produto top."
+      },
+      {
+        "id": 303,
+        "user": "Camila P.",
+        "rating": 4,
+        "date": "2 semanas atrás",
+        "text": "Caimento perfeito no corpo. Tecido muito macio."
+      },
+      {
+        "id": 304,
+        "user": "Rodrigo F.",
+        "rating": 5,
+        "date": "3 semanas atrás",
+        "text": "Entrega rápida e produto muito bem embalado."
+      },
+      {
+        "id": 305,
+        "user": "Beatriz A.",
+        "rating": 5,
+        "date": "1 mês atrás",
+        "text": "Estou apaixonado por essa coleção. Quero todas!"
+      },
+      {
+        "id": 306,
+        "user": "João P.",
+        "rating": 5,
+        "date": "5 dias atrás",
+        "text": "Qualidade absurda! O dourado é muito vivo."
+      }
+    ]
   },
   {
     "id": 4,
@@ -33,7 +144,30 @@
     "category": "Lifestyle",
     "image": "/tshirts/camiseta1.png",
     "tag": "Trending",
-    "description": "Padrão icônico do calçadão aplicado em malha tecnológica off-white."
+    "description": "Padrão icônico do calçadão aplicado em malha tecnológica off-white.",
+    "reviews": [
+      {
+        "id": 401,
+        "user": "Ana M.",
+        "rating": 5,
+        "date": "1 semana atrás",
+        "text": "Presenteei meu namorado e ele amou. A entrega foi super rápida."
+      },
+      {
+        "id": 402,
+        "user": "Carlos S.",
+        "rating": 4,
+        "date": "2 semanas atrás",
+        "text": "Gostei muito, mas achei que fosse um pouco mais branca. É off-white mesmo."
+      },
+      {
+        "id": 403,
+        "user": "Pedro H.",
+        "rating": 5,
+        "date": "3 dias atrás",
+        "text": "O tecido é incrivelmente macio. Não dá vontade de tirar."
+      }
+    ]
   },
   {
     "id": 5,
@@ -42,7 +176,58 @@
     "category": "Retro",
     "image": "/tshirts/camiseta1.png",
     "tag": "Lenda",
-    "description": "A camisa do futebol arte. O manto sagrado que encantou o mundo."
+    "description": "A camisa do futebol arte. O manto sagrado que encantou o mundo.",
+    "reviews": [
+      {
+        "id": 501,
+        "user": "Roberto D.",
+        "rating": 5,
+        "date": "1 dia atrás",
+        "text": "Emocionante ter essa camisa. Qualidade idêntica à da época."
+      },
+      {
+        "id": 502,
+        "user": "Lucas O.",
+        "rating": 5,
+        "date": "4 dias atrás",
+        "text": "Perfeita! O escudo bordado é a coisa mais linda."
+      },
+      {
+        "id": 503,
+        "user": "Fernanda L.",
+        "rating": 5,
+        "date": "1 semana atrás",
+        "text": "Comprei para meu pai e ele chorou de emoção. Obrigado Onze Carioca!"
+      },
+      {
+        "id": 504,
+        "user": "Rafael K.",
+        "rating": 4,
+        "date": "2 semanas atrás",
+        "text": "Muito boa, só o preço que é um pouco salgado, mas vale pela história."
+      },
+      {
+        "id": 505,
+        "user": "Mariana C.",
+        "rating": 5,
+        "date": "3 semanas atrás",
+        "text": "Chegou super rápido e a embalagem é um show a parte."
+      },
+       {
+        "id": 506,
+        "user": "Thiago S.",
+        "rating": 5,
+        "date": "5 dias atrás",
+        "text": "Material muito confortável, não esquenta."
+      },
+       {
+        "id": 507,
+        "user": "Amanda R.",
+        "rating": 5,
+        "date": "1 mês atrás",
+        "text": "Linda demais, uso em todo jogo da seleção."
+      }
+    ]
   },
   {
     "id": 6,
@@ -51,6 +236,36 @@
     "category": "Concept",
     "image": "/tshirts/camiseta1.png",
     "tag": "Eco",
-    "description": "Verde floresta profundo. Elegância sustentável com plásticos reciclados."
+    "description": "Verde floresta profundo. Elegância sustentável com plásticos reciclados.",
+    "reviews": [
+      {
+        "id": 601,
+        "user": "Gabriela T.",
+        "rating": 5,
+        "date": "2 dias atrás",
+        "text": "Adorei a proposta sustentável! E a camisa é linda."
+      },
+      {
+        "id": 602,
+        "user": "Felipe R.",
+        "rating": 5,
+        "date": "1 semana atrás",
+        "text": "O verde é muito bonito pessoalmente, bem fechado."
+      },
+      {
+        "id": 603,
+        "user": "Juliana M.",
+        "rating": 4,
+        "date": "2 semanas atrás",
+        "text": "Tecido um pouco mais grosso que as outras, mas muito bom."
+      },
+      {
+        "id": 604,
+        "user": "Bruno S.",
+        "rating": 5,
+        "date": "3 dias atrás",
+        "text": "Caimento perfeito e ainda ajuda o planeta. Nota 10!"
+      }
+    ]
   }
 ]

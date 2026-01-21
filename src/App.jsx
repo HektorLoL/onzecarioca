@@ -16,6 +16,7 @@ import Sobre from './pages/Sobre';
 import Contato from './pages/Contato';
 import Icons from './pages/Icons';
 import Colecao from './pages/Colecao';
+import ProductDetail from './pages/ProductDetail';
 import Checkout from './pages/Checkout';
 
 // Import the functions you need from the SDKs you need
@@ -103,6 +104,7 @@ export default function App() {
           <Route path="/contato" element={<Contato />} />
           <Route path="/icons" element={<Icons />} />
           <Route path="/colecao" element={<Colecao addToCart={addToCart} />} />
+          <Route path="/product/:id" element={<ProductDetail addToCart={addToCart} />} />
           <Route path="/checkout" element={<Checkout cart={cart} clearCart={clearCart} />} />
         </Routes>
 

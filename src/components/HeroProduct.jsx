@@ -21,9 +21,9 @@ const HeroProduct = ({ image, title = "GOLDEN ERA", subtitle = "Edição Limitad
         </div>
         
         {/* Floating Badge */}
-        <div className="absolute top-8 -right-4 w-24 h-24 bg-white rounded-full flex flex-col items-center justify-center z-30 shadow-xl border-4 border-stone-100">
+        <div className="absolute top-8 right-4 md:-right-4 w-20 h-20 md:w-24 md:h-24 bg-white rounded-full flex flex-col items-center justify-center z-30 shadow-xl border-4 border-stone-100">
            <span className="text-stone-400 text-[10px] font-bold uppercase">Est.</span>
-           <span className="text-2xl font-black text-green-800">1950</span>
+           <span className="text-xl md:text-2xl font-black text-green-800">1950</span>
         </div>
     </div>
   );

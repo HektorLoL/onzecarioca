@@ -1,5 +1,6 @@
 import React from 'react';
 import { Plus } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const ProductCard = ({ product, onAdd }) => (
   <div className="group bg-white rounded-2xl overflow-hidden border border-stone-100 hover:border-green-200 transition-all duration-300 hover:shadow-xl hover:shadow-stone-200/50 flex flex-col h-full relative">
@@ -10,16 +11,18 @@ const ProductCard = ({ product, onAdd }) => (
         </span>
       </div>
       
-      <img 
-        src={product.image} 
-        alt={product.name} 
-        className="w-full h-full object-cover mix-blend-multiply opacity-95 group-hover:scale-105 transition-transform duration-700"
-      />
+      <Link to={`/product/${product.id}`} className="block w-full h-full">
+        <img 
+          src={product.image} 
+          alt={product.name} 
+          className="w-full h-full object-cover mix-blend-multiply opacity-95 group-hover:scale-105 transition-transform duration-700"
+        />
+      </Link>
       
       {/* Quick Add Button - Clean */}
       <button 
         onClick={() => onAdd(product)}
-        className="absolute bottom-4 right-4 w-12 h-12 bg-green-700 text-white rounded-full flex items-center justify-center shadow-lg translate-y-20 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 hover:bg-green-800 hover:scale-110"
+        className="absolute bottom-4 right-4 w-12 h-12 bg-green-700 text-white rounded-full flex items-center justify-center shadow-lg md:translate-y-20 md:opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 hover:bg-green-800 hover:scale-110 z-20"
       >
         <Plus className="w-6 h-6" />
       </button>
@@ -28,7 +31,9 @@ const ProductCard = ({ product, onAdd }) => (
     <div className="p-6 flex flex-col flex-grow">
       <div className="mb-2">
         <p className="text-[10px] text-stone-500 font-bold uppercase tracking-widest mb-1">{product.category}</p>
-        <h3 className="text-green-900 font-bold text-lg leading-tight group-hover:text-green-700 transition-colors">{product.name}</h3>
+        <Link to={`/product/${product.id}`}>
+          <h3 className="text-green-900 font-bold text-lg leading-tight group-hover:text-green-700 transition-colors">{product.name}</h3>
+        </Link>
       </div>
       <p className="text-stone-500 text-sm mb-4 line-clamp-2 leading-relaxed">{product.description}</p>
       <div className="flex justify-between items-center pt-4 border-t border-stone-100 mt-auto">
